@@ -1,2 +1,20 @@
 <html>
+<head>
+  <meta charset+'utf-8'>
+  <title>D3 List</title>
+  <script type="text/javascript" src = "https://d3js.org/d3.v5.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+  var animals = ['Lion','Tiger','Bear','Eagle','Gazelle','Rabbit','Zebra']
+  d3.select('body').selectAll('li')
+    .data(animals)
+    .enter()
+    .append('li')
+    .text(function(d){
+      return d
+    });
+</script>
+</body>
+
 </html>
