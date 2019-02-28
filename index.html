@@ -5,6 +5,7 @@
   <script type="text/javascript" src = "https://d3js.org/d3.v5.js"></script>
 </head>
 <body>
+  <h1>Animal List</h1>
 <script type="text/javascript">
   var animals = ['Lion','Tiger','Bear','Eagle','Gazelle','Rabbit','Zebra']
   d3.select('body').selectAll('li')
@@ -16,5 +17,18 @@
     });
 </script>
 </body>
+<h1>Changes to CSV</h1>
+<p>D3 v5 uses Promises instead of asynchronous callbacks for loading data.
+The use of Promises simplifies the code needed to run the method.
+d3 v4 example: <br>
+d3.csv("file.csv"), function(error,data){<br>
+if (error) console.log(error);<br>
+else;
+<pre>console.log(data);</pre><br>
+d3 v5 example: <br>
+d3.csv("file.csv").then(function(data){<br>
+  console.log(data);<br>
+});
 
+} </p>
 </html>
