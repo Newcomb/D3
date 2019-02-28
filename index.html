@@ -19,7 +19,8 @@
 </body>
 <h1>Changes to CSV</h1>
 <p>D3 v5 uses Promises instead of asynchronous callbacks for loading data.
-The use of Promises simplifies the code needed to run the method.<br>
+The use of Promises simplifies the code needed to run the method because it changes
+the request module to a fetch module. This allows the method to stream the information.<br>
 <br>
 d3 v4 example: <br>
 d3.csv("file.csv"), function(error,data){<br>
